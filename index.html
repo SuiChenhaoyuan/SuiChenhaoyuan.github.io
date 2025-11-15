@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sui Chenhaoyuan - Academic Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic homepage of Sui Chenhaoyuan." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --primary: #1f4f9c;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #e0e0e0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dbeafe, #e5e7eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    .header-text h1 {
+      font-size: 30px;
+      margin-bottom: 4px;
+    }
+
+    .header-text h2 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .header-text p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .contact span {
+      margin-right: 12px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 20px 22px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 6px;
+    }
+
+    .card p {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .card ul {
+      margin-left: 18px;
+      margin-top: 4px;
+      font-size: 14px;
+    }
+
+    .tag-row {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e5ecff;
+      color: #1f3d7a;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="avatar">
+        SC
+      </div>
+      <div class="header-text">
+        <h1>Sui Chenhaoyuan</h1>
+        <h2>M2 Student – Control, Signal & Image Processing</h2>
+        <p>
+          Université Paris-Saclay, France<br />
+          Interested in automatic control, satellite systems, AI for perception, and embedded systems.
+        </p>
+        <div class="contact">
+          <!-- 修改成你自己的邮箱 / GitHub / LinkedIn -->
+          <span>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></span>
+          <span>GitHub: <a href="https://github.com/suichenhaoyuan" target="_blank">/suichenhaoyuan</a></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="card">
+      <h3>About Me</h3>
+      <p>
+        I am currently a second-year Master student in <b>Automatic Control, Signal and Image Processing</b> 
+        at Université Paris-Saclay. My background includes satellite systems, embedded systems, and data-driven
+        methods for modeling and control.
+      </p>
+      <p>
+        I enjoy working at the intersection of <b>control theory</b>, <b>machine learning</b>, and 
+        <b>robotic / aerospace systems</b>. I am particularly interested in applying rigorous modeling and
+        optimization to real-world systems.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Control</span>
+        <span class="tag">Signal & Image Processing</span>
+        <span class="tag">Satellite Systems</span>
+        <span class="tag">Embedded Systems</span>
+        <span class="tag">Machine Learning</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Research & Technical Interests</h3>
+      <ul>
+        <li>Modeling and control of satellite and space systems (EPS, ADCS, communication).</li>
+        <li>State estimation, Kalman filtering, stochastic modeling of dynamical systems.</li>
+        <li>Computer vision and perception for autonomous systems.</li>
+        <li>Signal and image processing, time-series analysis.</li>
+        <li>Embedded implementation on FPGA / microcontrollers.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <b>M.Sc. – Automatic Control, Signal and Image Processing</b>, Université Paris-Saclay, France<br />
+          2024–2026 (expected)
+        </li>
+        <li>
+          <b>Previous training in Satellite Systems / Electronic Engineering</b><br />
+          Coursework in control, embedded systems, signal processing, and space systems.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Selected Projects</h3>
+      <ul>
+        <li>
+          <b>Satellite Electrical Power System (EPS) Design & Simulation</b><br />
+          Modeling GaAs solar arrays, MPPT, lithium batteries, and power distribution control in MATLAB/Simulink.
+        </li>
+        <li>
+          <b>Attitude Determination and Control System for CubeSat</b><br />
+          3-axis dynamics, sensor modeling, TRIAD, Kalman filtering, and PID/LQR attitude control.
+        </li>
+        <li>
+          <b>Autonomous Driving & Sensor Fusion</b><br />
+          Multi-sensor fusion and trajectory planning (Bézier / polynomial, LQR-based optimization) for ADAS.
+        </li>
+        <li>
+          <b>Embedded and FPGA Projects</b><br />
+          LED controllers on FPGA (Verilog/VHDL), STM32 bare-metal C for GPIO and peripherals, real-time control.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Publications & Reports</h3>
+      <p>
+        <!-- 以后有论文可以在这里加 -->
+        Coming soon. A list of my academic reports and publications will appear here.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>
+        If you are interested in my profile or potential collaborations, feel free to contact me by email.<br />
+        I am open to internship opportunities and research projects related to control, space systems, and intelligent systems.
+      </p>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Sui Chenhaoyuan · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // 自动填当前年份
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
